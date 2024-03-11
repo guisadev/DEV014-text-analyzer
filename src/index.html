@@ -1,13 +1,32 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>Analizador de texto</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Analizador de Texto</title>
+    <link rel="stylesheet" href="estilos.css" />
 </head>
-
 <body>
-  <script src="index.js" type="module"></script>
+
+    <h2>Analizador de texto</h2>
+    <ul>
+        
+            <li class="Número de carácteres" data-testid="char-count">Carácteres: </li> |
+            <li class="Carácteres sin espacios" data-testid="char-no-spaces">Carácteres sin espacios: </li> |
+            <li class="Número de palabras" data-testid="word-count">Número de palabras: </li> |
+            <li class="Números" data-testid="number-count">Números: </li> |
+            <li class="Suma de números" data-testid="sum-numbers">suma de números: </li> |
+            <li class="Promedio Longitud" data-testid="avg-word-length">promedio Longitud: </li> |
+    
+        <div data-testid="textarea-li">
+            <textarea class="textArea" name="textoUsuario" rows="4" cols="50" data-testid="text-area"></textarea>
+        </div>
+    </ul>
+
+    <div><button id="limpiarMetricas" data-testid="clear-metrics">Limpiar métricas</button></div>
+    <div class="" style="text-align: left !important;" ><p>Autora: <b>Gisela Saavedra</b></p></div>
+
+    <!-- Importar el módulo analizador directamente en HTML -->
+    <script type="module" src="index.js"></script>
 </body>
 </html>
