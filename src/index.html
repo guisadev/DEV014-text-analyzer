@@ -4,28 +4,31 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Analizador de Texto</title>
-    <link rel="stylesheet" href="estilos.css" />
+    <link rel="stylesheet" href="style.css" /> 
 </head>
 <body>
-
-    <h2>Analizador de texto</h2>
+<header>
+    <h1> Analizador de texto </h1><!-- h1 es hijo de header-->
+    <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="logotipo github">
+</header>
     <ul>
         
-            <li class="Número de carácteres" data-testid="char-count">Carácteres: </li> |
-            <li class="Carácteres sin espacios" data-testid="char-no-spaces">Carácteres sin espacios: </li> |
-            <li class="Número de palabras" data-testid="word-count">Número de palabras: </li> |
-            <li class="Números" data-testid="number-count">Números: </li> |
-            <li class="Suma de números" data-testid="sum-numbers">suma de números: </li> |
-            <li class="Promedio Longitud" data-testid="avg-word-length">promedio Longitud: </li> |
+            <li class="lista" data-testid="character-count">Número de carácteres: </li> |
+            <li class="lista" data-testid="character-no-spaces-count">Carácteres sin espacios: </li> |
+            <li class="lista" data-testid="word-count">Número de palabras: </li> |
+            <li class="lista" data-testid="number-count">Números: </li> |
+            <li class="lista" data-testid="number-sum">Suma de números: </li> |
+            <li class="lista" data-testid="word-length-average">Promedio Longitud: </li> |
     
         <div data-testid="textarea-li">
-            <textarea class="textArea" name="textoUsuario" rows="4" cols="50" data-testid="text-area"></textarea>
+            <textarea name="user-input" rows="4" cols="50" placeholder="escribe aquí..." data-testid="text-area"> </textarea>
         </div>
     </ul>
 
     <div><button id="limpiarMetricas" data-testid="clear-metrics">Limpiar métricas</button></div>
-    <div class="" style="text-align: left !important;" ><p>Autora: <b>Gisela Saavedra</b></p></div>
-
+<footer>
+    <p>Autora: Gisela Saavedra</p>
+</footer>
     <!-- Importar el módulo analizador directamente en HTML -->
     <script type="module" src="index.js"></script>
 </body>
