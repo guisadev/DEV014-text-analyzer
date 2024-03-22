@@ -6,8 +6,7 @@ const analizador = {
     let trimmedText = text.trim(); // //trim elimina los espacios en blanco adelante y atrás de cada palabra.
 
 
-    trimmedText = text.split(' '); // el split transforma el texto en array con el elemto que yo le indico (' ')
-
+    trimmedText = text.split(' '); // el split separa el texto con ese parametro espacio para crear un array y cuenta cada elemento
     //console.log(trimmedText);
 
     return trimmedText.length;
@@ -15,7 +14,6 @@ const analizador = {
   },
 
   getCharacterCount: (text) => {
-    // Elimina espacios en blanco, comas y puntos al inicio y al final del párrafo
 
     return text.length; //recorre la longitud del texto: la cantidad de carácteres introducidos
   },
@@ -38,7 +36,7 @@ const analizador = {
     return count;
   },
 
-  getNumberCount: (text) => { // DUDA: contar digito por digito o contar numeros compuesto. ej: 121 5= 9 o 126?
+  getNumberCount: (text) => { 
     let cantidadDigitos = 0;
     const palabras = text.split(" "); //
 

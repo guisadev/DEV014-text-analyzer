@@ -7,7 +7,7 @@ const buttonLimpiar = document.getElementById("limpiarMetricas");
 const limpiarMetricas = () => {
   textarea.value = "";
   const li = document.querySelectorAll("li");
-  li[0].textContent = `Número de carácteres:`; //Copiar y pegar el codigo de la const li para que no borre mis items
+  li[0].textContent = `Número de carácteres:`;
   li[1].textContent = `Carácteres sin espacios:`;
   li[2].textContent = `Número de palabras:`;
   li[3].textContent = `Números:`;
@@ -26,8 +26,8 @@ const analizadorText = () => {
 
 
   const li = document.querySelectorAll("li");
-  li[0].textContent = `Número de carácteres: ${charCount}`; //otra forma de añadir cadenas js al DOM ¿Cuál es este apóstrofe?
-  li[1].textContent = `Carácteres sin espacios: ${charCountNoSpaces}`;// para insertar el valor de la variable: charcountnoespaces
+  li[0].textContent = `Número de carácteres: ${charCount}`;
+  li[1].textContent = `Carácteres sin espacios: ${charCountNoSpaces}`;// para insertar el valor de la variable
   li[2].textContent = `Número de palabras: ${wordCount}`;
   li[3].textContent = `Números: ${numberCount}`;
   li[4].textContent = `Suma de números: ${addNumberCount}`;
