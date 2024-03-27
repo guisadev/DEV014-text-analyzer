@@ -1,4 +1,4 @@
-import { analizador } from "./analyzer.js";
+import analizador from "./analyzer.js";
 
 //Selectores del DOM
 const textarea = document.querySelector('textarea[name="user-input"]');
@@ -34,7 +34,7 @@ const analizadorText = () => {
   li[5].textContent = `Promedio longitud: ${getAverageWordLength}`;
   //llamar por atributo
 };
-//Eventos del DOM investigar para que se usa
+//Eventos del DOM 
 textarea.addEventListener("input", () => { 
   analizadorText();
 });
